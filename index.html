@@ -149,13 +149,14 @@
 
         <div class="highlight-box">
             <p>🔒 DeciSpin does not collect, store, or share any personal information. We do not have accounts or
-                logins. Your data stays on your device and is never sent to our servers. Third-party APIs used by the
-                app handle requests in accordance with their own privacy policies.</p>
+                logins. Your personal data stays on your device. AI feature requests are routed through our server
+                infrastructure solely to securely forward them to our AI provider — we do not read, store, or analyze
+                your prompts.</p>
         </div>
 
         <section>
             <h2>1. Overview</h2>
-            <p>DeciSpin is a decision-making tool that helps you choose between options using a spinning
+            <p>DeciSpin ("the app") is a decision-making tool that helps you choose between options using a spinning
                 wheel. This Privacy Policy explains how the app handles your information.</p>
             <p>By using DeciSpin, you agree to the terms described in this policy.</p>
         </section>
@@ -236,9 +237,13 @@
 
         <section>
             <h2>5. AI Feature</h2>
-            <p>When you use the AI suggestion feature, the text you enter is sent to Groq's API to generate
-                recommendations. This text is processed by Groq in accordance with their privacy policy. We do not
-                store or log the prompts you send.</p>
+            <p>When you use the AI suggestion feature, the text you enter is routed through our server infrastructure
+                (hosted on Vercel) solely for the purpose of securely forwarding it to Groq's API. This is necessary
+                to protect our API credentials. Our server does not read, store, log, or analyze the content of your
+                prompts. Vercel may retain standard access logs (such as timestamps and IP addresses) as part of normal
+                server operation, but prompt content is not stored by us.</p>
+            <p>Your prompt is then processed by Groq in accordance with their privacy policy. We do not store or log
+                the prompts you send.</p>
             <p>We recommend not entering sensitive personal information in the AI prompt.</p>
         </section>
 
